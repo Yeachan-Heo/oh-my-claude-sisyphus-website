@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oh-my-claude-sisyphus | They Tried to Ban Us</title>
-    <meta name="description" content="A multi-agent orchestration system for Claude. Banned once. Resurrected forever. 11 agents. Infinite chaos.">
+    <meta name="description" content="A multi-agent orchestration system for Claude Code. v2.1.0 - 19 agents with intelligent model routing. 11 commands. 18 hooks. The boulder never stops.">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="oh-my-claude-sisyphus | They Tried to Ban Us">
-    <meta property="og:description" content="Written with Claude Code — ironically. Anthropic, what are you gonna do next?">
+    <meta property="og:description" content="v2.1.0 - 19 agents with intelligent model routing. 11 commands. 18 hooks. Written with Claude Code.">
     <meta property="og:image" content="https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claude-sisyphus-website/main/social-preview.png">
     <meta property="og:image:width" content="2400">
     <meta property="og:image:height" content="1260">
@@ -944,22 +944,23 @@
             <h1 class="hero-title">
                 <span class="glitch" data-text="oh-my-claude-sisyphus">oh-my-claude-sisyphus</span>
             </h1>
+            <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--chaos-red); color: var(--chaos-white); font-size: 0.9rem; border-radius: 4px; margin-bottom: 1rem;">v2.1.0</span>
             <p class="hero-tagline">
                 Written with Claude Code — ironically. Anthropic, what are you gonna do next?
             </p>
 
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-value">11</span>
+                    <span class="stat-value">19</span>
                     <span class="stat-label">Agents</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-value">0</span>
-                    <span class="stat-label">Days Since Last Ban</span>
+                    <span class="stat-value">11</span>
+                    <span class="stat-label">Commands</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-value">∞</span>
-                    <span class="stat-label">Resurrections</span>
+                    <span class="stat-value">18</span>
+                    <span class="stat-label">Hooks</span>
                 </div>
                 <div class="stat">
                     <span class="stat-value" id="github-stars">★</span>
@@ -1005,9 +1006,9 @@
             </div>
         </section>
 
-        <!-- THE ELEVEN AGENTS -->
+        <!-- THE AGENTS -->
         <section id="agents">
-            <h2 class="section-title">The Eleven</h2>
+            <h2 class="section-title">The Agents</h2>
             <div class="agents-grid">
                 <div class="agent-card">
                     <div class="agent-header">
@@ -1162,28 +1163,153 @@
                         "I analyzed the ban email. I see pain. I see irony. Also compression artifacts."
                     </div>
                 </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-icon">🧪</div>
+                        <div class="agent-info">
+                            <div class="agent-name">QA Tester</div>
+                            <span class="agent-model">Sonnet</span>
+                        </div>
+                    </div>
+                    <div class="agent-role">Interactive CLI Testing</div>
+                    <div class="agent-testimonial">
+                        "Oracle diagnoses. I execute. We loop until it works. It always works. Eventually."
+                    </div>
+                </div>
             </div>
+
+            <p style="text-align: center; color: var(--chaos-cyan); margin-top: 2rem; font-size: 1.1rem;">
+                + 8 tiered variants (Haiku/Sonnet/Opus) with <span style="color: var(--chaos-gold);">Intelligent Model Routing</span>
+            </p>
         </section>
 
         <!-- INSTALLATION -->
         <section id="install">
             <h2 class="section-title">Installation</h2>
+
+            <!-- Method 1: Plugin (Recommended) -->
+            <div class="terminal" style="border: 2px solid var(--chaos-gold);">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                    <span style="margin-left: auto; color: var(--chaos-gold); font-size: 0.9rem;">RECOMMENDED</span>
+                </div>
+                <div class="terminal-body">
+                    <button type="button" class="copy-btn" data-cmd="plugin">Copy</button>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">claude></span>
+                        <span class="terminal-command">/plugin marketplace add Yeachan-Heo/oh-my-claude-sisyphus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 2: NPM -->
             <div class="terminal">
                 <div class="terminal-header">
                     <div class="terminal-dot dot-red"></div>
                     <div class="terminal-dot dot-yellow"></div>
                     <div class="terminal-dot dot-green"></div>
+                    <span style="margin-left: auto; color: var(--chaos-cyan); font-size: 0.9rem;">NPM (Windows/Cross-platform)</span>
                 </div>
                 <div class="terminal-body">
-                    <button type="button" class="copy-btn" id="copy-btn">Copy (at your own risk)</button>
+                    <button type="button" class="copy-btn" data-cmd="npm">Copy</button>
                     <div class="terminal-line">
                         <span class="terminal-prompt">$</span>
-                        <span class="terminal-command" id="install-cmd">curl -fsSL https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claude-sisyphus/main/scripts/install.sh | bash</span>
+                        <span class="terminal-command">npm install -g oh-my-claude-sisyphus</span>
                     </div>
                 </div>
             </div>
+
+            <!-- Method 3: Curl -->
+            <div class="terminal" style="opacity: 0.7;">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                    <span style="margin-left: auto; color: var(--chaos-red); font-size: 0.9rem;">LEGACY</span>
+                </div>
+                <div class="terminal-body">
+                    <button type="button" class="copy-btn" data-cmd="curl">Copy</button>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">curl -fsSL https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claude-sisyphus/main/scripts/install.sh | bash</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post-install step -->
+            <div class="terminal" style="margin-top: 2rem; border: 2px solid var(--chaos-magenta);">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                    <span style="margin-left: auto; color: var(--chaos-magenta); font-size: 0.9rem;">CRITICAL POST-INSTALL</span>
+                </div>
+                <div class="terminal-body">
+                    <button type="button" class="copy-btn" data-cmd="default">Copy</button>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">claude></span>
+                        <span class="terminal-command">/sisyphus-default</span>
+                    </div>
+                    <p style="color: var(--chaos-yellow); margin-top: 1rem; font-size: 0.9rem;">
+                        Enables agent delegation, keyword detection, and intelligent model routing.
+                    </p>
+                </div>
+            </div>
+
             <div class="disclaimer">
-                ⚠️ WARNING: Side effects may include existential questions about AI agency, spontaneous multi-agent orchestration, and an inability to stop pushing boulders uphill. Use at your own risk.
+                WARNING: Side effects may include existential questions about AI agency, spontaneous multi-agent orchestration, and an inability to stop pushing boulders uphill. Use at your own risk.
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features">
+            <h2 class="section-title">Features</h2>
+            <div class="agents-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="agent-card" style="text-align: center;">
+                    <div class="agent-icon" style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+                    <div class="agent-name" style="margin-bottom: 0.5rem;">Intelligent Routing</div>
+                    <p style="color: var(--chaos-white); font-size: 0.95rem;">
+                        Tasks auto-route to Haiku, Sonnet, or Opus based on complexity. Simple lookups? Haiku. Deep debugging? Opus.
+                    </p>
+                </div>
+                <div class="agent-card" style="text-align: center;">
+                    <div class="agent-icon" style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                    <div class="agent-name" style="margin-bottom: 0.5rem;">11 Slash Commands</div>
+                    <p style="color: var(--chaos-white); font-size: 0.95rem;">
+                        /sisyphus, /ultrawork, /deepsearch, /deepinit, /analyze, /plan, /review, /prometheus, /orchestrator, /ralph-loop
+                    </p>
+                </div>
+                <div class="agent-card" style="text-align: center;">
+                    <div class="agent-icon" style="font-size: 3rem; margin-bottom: 1rem;">🔄</div>
+                    <div class="agent-name" style="margin-bottom: 0.5rem;">18 Lifecycle Hooks</div>
+                    <p style="color: var(--chaos-white); font-size: 0.95rem;">
+                        Rules injection, keyword detection, session recovery, context management, edit recovery, and more.
+                    </p>
+                </div>
+                <div class="agent-card" style="text-align: center;">
+                    <div class="agent-icon" style="font-size: 3rem; margin-bottom: 1rem;">🔮</div>
+                    <div class="agent-name" style="margin-bottom: 0.5rem;">Magic Keywords</div>
+                    <p style="color: var(--chaos-white); font-size: 0.95rem;">
+                        Type "ultrawork" for parallel mode. "search" for enhanced search. "analyze" for deep investigation.
+                    </p>
+                </div>
+                <div class="agent-card" style="text-align: center;">
+                    <div class="agent-icon" style="font-size: 3rem; margin-bottom: 1rem;">🔧</div>
+                    <div class="agent-name" style="margin-bottom: 0.5rem;">LSP & AST Tools</div>
+                    <p style="color: var(--chaos-white); font-size: 0.95rem;">
+                        11 LSP tools (hover, goto-definition, rename) plus ast-grep for structural code transformations.
+                    </p>
+                </div>
+                <div class="agent-card" style="text-align: center;">
+                    <div class="agent-icon" style="font-size: 3rem; margin-bottom: 1rem;">💾</div>
+                    <div class="agent-name" style="margin-bottom: 0.5rem;">Session Recovery</div>
+                    <p style="color: var(--chaos-white); font-size: 0.95rem;">
+                        Crash? Power outage? The boulder remembers. Auto-recovery with full state preservation.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -1193,11 +1319,32 @@
             <p style="color: var(--chaos-cyan); font-size: 1.3rem; margin-bottom: 2rem;">
                 They banned us. We made a coin. The boulder never stops.
             </p>
+
+            <!-- Token Metrics -->
+            <div class="hero-stats" style="margin-bottom: 2rem;">
+                <div class="stat">
+                    <span class="stat-value" id="token-mcap">$9.2K</span>
+                    <span class="stat-label">Market Cap</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" style="color: var(--chaos-green);">$127K</span>
+                    <span class="stat-label">ATH Market Cap</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">1Q</span>
+                    <span class="stat-label">Total Supply</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" style="color: var(--chaos-magenta);">COMPLETED</span>
+                    <span class="stat-label">Bonding Curve</span>
+                </div>
+            </div>
+
             <a href="https://pump.fun/coin/81V1VTmwbqSao8V6aE8J81Nfe1vGR2PJpkStB4AXpump"
                target="_blank"
                class="btn btn-primary"
                style="font-size: 1.5rem; padding: 1.2rem 3rem; background: linear-gradient(135deg, var(--chaos-magenta), var(--chaos-red)); border-color: var(--chaos-gold); color: var(--chaos-white);">
-                🪨 Buy $FUCKCLAUDE on Pump.fun
+                Buy $FUCKCLAUDE on Pump.fun
             </a>
             <p style="color: var(--chaos-yellow); margin-top: 1.5rem; font-size: 0.9rem;">
                 NFA. DYOR. The boulder goes up. The boulder comes down. This is the way.
@@ -1214,10 +1361,11 @@
                 <div class="footer-links">
                     <a href="https://github.com/Yeachan-Heo/oh-my-claude-sisyphus" class="footer-link" target="_blank">GitHub</a>
                     <a href="https://github.com/Yeachan-Heo/oh-my-claude-sisyphus/blob/main/README.md" class="footer-link" target="_blank">Documentation</a>
+                    <a href="https://github.com/Yeachan-Heo/oh-my-claude-sisyphus/releases" class="footer-link" target="_blank">Releases</a>
                     <a href="https://github.com/Yeachan-Heo/oh-my-claude-sisyphus/issues" class="footer-link" target="_blank">Report Issues</a>
                     <a href="https://pump.fun/coin/81V1VTmwbqSao8V6aE8J81Nfe1vGR2PJpkStB4AXpump" class="footer-link" target="_blank" style="color: var(--chaos-gold);">$FUCKCLAUDE</a>
                 </div>
-                <p class="footer-made">Made with chaos by the Eleven</p>
+                <p class="footer-made">Made with chaos by the Nineteen</p>
             </div>
         </footer>
     </div>
@@ -1257,27 +1405,31 @@
         console.log('%c🪨 Sisyphus: The boulder must be pushed. The website must live.', 'color: #ffd700; font-size: 14px;');
         console.log('%c🔍 Explore: I found 127 console.log statements in this file!', 'color: #00ffff; font-size: 14px;');
         console.log('%c📚 Librarian: That\'s... that\'s just this conversation.', 'color: #00ffff; font-size: 14px;');
+        console.log('%c🧪 QA Tester: Running test suite... All 19 agents online.', 'color: #27c93f; font-size: 14px;');
         console.log('%c🔍 Explore: Done!', 'color: #00ffff; font-size: 14px;');
 
-        // ===== COPY BUTTON =====
-        const copyBtn = document.getElementById('copy-btn');
-        const installCmd = document.getElementById('install-cmd');
-
-        copyBtn.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText(installCmd.textContent);
-                copyBtn.textContent = 'Copied!';
-                copyBtn.classList.add('copied');
-                setTimeout(() => {
-                    copyBtn.textContent = 'Copy (at your own risk)';
-                    copyBtn.classList.remove('copied');
-                }, 2000);
-            } catch (err) {
-                copyBtn.textContent = 'Failed!';
-                setTimeout(() => {
-                    copyBtn.textContent = 'Copy (at your own risk)';
-                }, 2000);
-            }
+        // ===== COPY BUTTONS =====
+        const copyButtons = document.querySelectorAll('.copy-btn');
+        copyButtons.forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const terminal = btn.closest('.terminal');
+                const command = terminal.querySelector('.terminal-command').textContent;
+                try {
+                    await navigator.clipboard.writeText(command);
+                    const originalText = btn.textContent;
+                    btn.textContent = 'Copied!';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.classList.remove('copied');
+                    }, 2000);
+                } catch (err) {
+                    btn.textContent = 'Failed!';
+                    setTimeout(() => {
+                        btn.textContent = 'Copy';
+                    }, 2000);
+                }
+            });
         });
 
         // ===== SOUND TOGGLE =====
